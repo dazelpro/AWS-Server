@@ -1,0 +1,15 @@
+.full{
+    width: 90%;
+}
+
+img{
+    width:300px; 
+    height:300px; 
+    margin-left: -2%;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+}
+
+.badge{
+    font-size: 16px;
+}

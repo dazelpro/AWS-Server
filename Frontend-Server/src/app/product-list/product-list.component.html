@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Product List</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/">Frontend Server - AWS</a>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                        <a class="nav-link" href="/">Product List
+                        </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link">|</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="http://localhost:8081/">Backend</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br><br><br><br>
+        <div class="container">
+            <div class="row" *ngFor="let products of product"><div class="col"></div>
+                <div class="col-8">                   
+                    <div class="card">
+                        <div class="card-body">
+                            <table width="100%">
+                                <tr>
+                                    <td width="20%">
+                                        <img src="/assets/list/{{ products.urlImage }}"></td>
+                                    <td>
+                                        {{products.productName}} <br> Rp. {{products.Price | number}}
+                                    </td>
+                                    <td width="20%">
+                                        <a routerLink="/detail/{{products._id}}" class="btn btn-dark full">Detail &nbsp;&raquo;</a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div><hr>
+                </div><div class="col"></div>
+            </div>
+        </div>        
+    </body>
+</html>
