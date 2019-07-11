@@ -29,7 +29,7 @@ export class FormProductComponent implements OnInit {
             if (data['success']){
                 this.router.navigate(['list']); 
             }else{
-                this.alert = true;
+                this.alert      = true;
             }
         } catch (error){
             this.router.navigate(['list']);
