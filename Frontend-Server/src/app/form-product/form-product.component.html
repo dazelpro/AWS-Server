@@ -29,7 +29,7 @@
                         <form>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Product Name</label>
-                                <input type="text" [(ngModel)]="productName" name="productName" class="form-control" autocomplete="off" required>
+                                <input type="text" [(ngModel)]="productName" name="productName" class="form-control" autocomplete="off" autofocus required>
                                 <small class="form-text text-muted">Example : ATool 892-1819 Ring WRNC 18X19</small>
                             </div>
                             <div class="form-group">
@@ -41,11 +41,12 @@
                                 <input type="text" [(ngModel)]="urlImage" name="urlImage" class="form-control" autocomplete="off" required>
                                 <small class="form-text text-muted">Example : Image-1200[0].png</small>
                             </div>
-                            <button (click)="saveProduct()" class="btn btn-dark">Save Data  &raquo;</button>
-                        </form><br>
-                        <div *ngIf="this.alert" class="alert alert-danger" role="alert">
-                            <strong>Failed : </strong> Product name already exist !
-                        </div>
+                            <button (click)="saveProduct()" class="btn btn-dark">Save Data  &raquo;</button><br><br>
+                            <div *ngIf="this.alert" class="alert alert-danger" role="alert">
+                                <button type="reset" (click)="reset()" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <strong>Failed : </strong> Product name already exist !
+                            </div>
+                        </form>                     
                     </div>
                 <div class="col"></div>
             </div>

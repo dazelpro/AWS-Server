@@ -36,4 +36,9 @@ export class FormProductComponent implements OnInit {
         }
     }
 
+    reset(){
+        this.alert          = false;
+        this.productName    ='';
+    }
+
 }
