@@ -1,4 +1,4 @@
-### Contoh Image Name Pada Folder Assets
+# Contoh Image Name Pada Folder Assets
 
 | Image Name    |
 | ------------- |
