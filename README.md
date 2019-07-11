@@ -1,3 +1,14 @@
+### Contoh Image Name Pada Folder Assets
+
+| Image Name    |
+| ------------- |
+| 100201[0].png |
+| 100473[0].png |
+| 100799[0].png |
+| 101224[0].png |
+| 102902[0].png |
+
+
 # Installation
 ### Backend Server
 
@@ -31,7 +42,6 @@ ng serve
 ```
 Kemudian buka Browser dan silahkan akses 
 [http://localhost:4200](http://localhost:4200)
-
 
 ## License
 [PT. Unico Sentral Distribusi](/)
