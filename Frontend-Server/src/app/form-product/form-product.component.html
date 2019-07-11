@@ -42,7 +42,10 @@
                                 <small class="form-text text-muted">Example : Image-1200[0].png</small>
                             </div>
                             <button (click)="saveProduct()" class="btn btn-dark">Save Data  &raquo;</button>
-                        </form>
+                        </form><br>
+                        <div *ngIf="this.alert" class="alert alert-danger" role="alert">
+                            <strong>Failed : </strong> Product name already exist !
+                        </div>
                     </div>
                 <div class="col"></div>
             </div>

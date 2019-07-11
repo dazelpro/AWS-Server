@@ -8,7 +8,7 @@ import { RestApiService } from '../rest-api.service';
   styleUrls     : ['./form-product.component.css']
 })
 export class FormProductComponent implements OnInit {
-
+    alert       : boolean = false;
     constructor(private router: Router,private rest: RestApiService) { }
     productName = '';
     Price       = '';
@@ -27,7 +27,9 @@ export class FormProductComponent implements OnInit {
                 }
             );
             if (data['success']){
-                this.router.navigate(['list']);     
+                this.router.navigate(['list']); 
+            }else{
+                this.alert = true;
             }
         } catch (error){
             this.router.navigate(['list']);
