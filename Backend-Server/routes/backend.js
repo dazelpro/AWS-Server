@@ -15,7 +15,10 @@ router.post('/save', (req, res, next)=>{
             });
         } else {
             product.save();
-            res.redirect('/');
+            res.json({
+                success: true,
+                message: 'Berhasil tersimpan'
+            });
         }                       
     });
 });
