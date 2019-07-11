@@ -19,7 +19,7 @@ export class FormProductComponent implements OnInit {
     async saveProduct(){
         try{        
             const data = await this.rest.post(
-                'http://localhost:8081/save',
+                'http://localhost:8081/api/save',
                 {
                     productName : this.productName,
                     Price       : this.Price,
